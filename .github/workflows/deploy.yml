@@ -1,0 +1,23 @@
+name: 🚀 Deploy `Tedx`  to Server
+on:
+  push:
+    branches:
+      - master
+jobs:
+  FTP-Deploy-Action:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+          
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: 65.109.153.186
+          username: github@tedxsoftwarica.com
+          password: N3$t@9377
+       
