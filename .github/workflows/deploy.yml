@@ -17,7 +17,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: 65.109.153.186
+          server: 65.109.99.134
           username: github@tedxsoftwarica.com
           password: N3$t@9377
        
